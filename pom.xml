@@ -83,6 +83,18 @@
 
   <build>
     <plugins>
+	<plugin>
+       	<groupId>org.codehaus.mojo</groupId>
+       	<artifactId>exec-maven-plugin</artifactId>
+       	<version>1.3.2</version>
+       	<configuration>
+           	<mainClass>com.squareup.squash-java.SquashEntry</mainClass>
+<arguments> 
+<argument>-jar</argument>
+<argument>target/squash-java-1.0.0-SNAPSHOT.jar</argument> 
+</arguments> 
+       	</configuration>
+   	</plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
